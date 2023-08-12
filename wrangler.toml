@@ -1,5 +1,0 @@
-name = "worker"
-
-kv_namespaces = [
-  { binding = "NOTIFY", id = "200822357fb148d1986cddb3f59c1906" }
-]

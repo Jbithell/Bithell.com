@@ -1,5 +1,5 @@
 export default {
-  async fetch(request, env, ctx) {
+  async fetch(request, env) {
     let email = request.body;
     let region = request.cf.region;
     let value = await env.NOTIFY.get("test");
