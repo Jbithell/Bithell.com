@@ -18,9 +18,6 @@
 			color: #ffffff;
 			background-color: #000000;
 
-			/* The image used */
-			background-image: url("dcb-cutout.png");
-
 			/* Full height */
 			height: 100%;
 		}
@@ -30,17 +27,13 @@
 		}
 
 		@media only screen and (max-width: 1400px) {
-			body {
-				/* Center and scale the image nicely */
-				background-position: top center;
-				background-repeat: no-repeat;
-				background-size: contain;
-			}
 			.text-box {
-				background-color:rgba(0, 0, 0, 0.5);
 				width: 100%;
 				height: 100%;
 				padding: 0;
+			}
+			#dcbPictureSmall {
+				width: 50%;
 			}
 		}
 		@media only screen and (min-width: 1401px) {
@@ -49,11 +42,16 @@
 				background-position: 5% 0%;
 				background-repeat: no-repeat;
 				background-size: contain;
+				/* The image used */
+				background-image: url("dcb-cutout.png");
 			}
 			.text-box {
 				width: 45%;
 				height: 90%;
 				padding-left: 55%;
+			}
+			#dcbPictureSmall {
+				display: none;
 			}
 		}
 
@@ -74,6 +72,7 @@
 			padding-right: 0.15em;
 		}
 		p {
+			font-weight: 300;
 			font-size: 1.3em;
 			margin-block-start: 0.5em;
 			margin-block-end: 0.5em;
@@ -92,12 +91,13 @@
 			<div>
 				<h1>David Bithell</h1>
 				<h2>1935 - 2023</h2>
+				<img src="dcb-cutout.png" id="dcbPictureSmall" alt="David Bithell facing the camera smiling" />
 				<br/>
-				<p style="font-weight: 300;">David died peacefully on the morning of the 12th August</p>
-				<p style="font-weight: 300;">Funeral arrangements will be published on this page once confirmed<!--Funeral service will be held at <a href="https://goo.gl/maps/8pRifrs51XBpkoHS7">St Peter’s Church</a>, Prestbury<br/>2pm on Friday 11<sup>th</sup> October</p>
-				<p style="font-weight: 300;">Family flowers only please but donations if desired to <a href="https://www.eastcheshirehospice.org.uk/">East Cheshire Hospice</a><br/><br/>
-					All donations and enquiries to <a href="https://www.cheshirefunerals.co.uk">JW Brocklehurst</a>-->
-				</p>
+				<p>David died peacefully at home in Prestbury on Saturday 12 August, aged 87 years.</p>
+				<p>Beloved father of Michael & Charles, grandfather to Andrew, James, Thomas, Matthew, Sarah and Emma, brother-in-law, uncle and friend to many. </p>
+				<p>His funeral service will be held at <a href="https://goo.gl/maps/8pRifrs51XBpkoHS7">St Peter’s Church</a>, Prestbury at 1.45pm on Tuesday 29 August and afterwards at the Bridge Hotel (Riverside Rooms). </p>
+				<p>Family flowers only please, but donations in lieu, if desired, to the Upton Youth & Community Project (food pantry) charity number 1181691, the Royal British Legion, 219279, or any local charity. </p>
+				<p>All enquiries to JW Brocklehurst Ltd, 17 Macclesfield Prestbury, SK10 4BW, Tel: 01625 829232, <a href="https://www.cheshirefunerals.co.uk">cheshirefunerals.co.uk</a></p>
 			</div>
 		</div>
 </div>
