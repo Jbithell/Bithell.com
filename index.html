@@ -1,106 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>David Bithell</title>
-	<!-- Design and Content by James Bithell - 12 August 2023, based on an earlier version from 28 September 2019 -->
+
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
-	<link rel="canonical" href="https://bithell.com" />
+	<meta name="description" content="Bithell.com - The Bithell Family's Official Website">
+	<meta name="author" content="Bithell">
+
+	<title>Bithell - The Bithell Family's Official Website</title>
+	
+	<script>
+	var emailyear = "2014";
+	</script>
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+	<!-- Custom CSS -->
 	<style>
-		html {
-			height: 100%;
+	body,
+	html {
+		width: 100%;
+		height: 100%;
+	}
+
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight: 700;
+	}
+
+	.lead {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.intro-header {
+		padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+		padding-bottom: 50px;
+		text-align: center;
+		color: #f8f8f8;
+		background: url(images/intro-bg.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	.intro-message {
+		position: relative;
+		padding-top: 20%;
+		padding-bottom: 20%;
+	}
+
+	.intro-message > h1 {
+		margin: 0;
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+		font-size: 5em;
+	}
+
+	.intro-divider {
+		width: 400px;
+		border-top: 1px solid #f8f8f8;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+
+	.intro-message > h3 {
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	}
+
+	@media(max-width:767px) {
+		.intro-message {
+			padding-bottom: 15%;
+		}
+
+		.intro-message > h1 {
+			font-size: 3em;
+		}
+
+		ul.intro-social-buttons > li {
+			display: block;
+			margin-bottom: 20px;
+			padding: 0;
+		}
+
+		ul.intro-social-buttons > li:last-child {
+			margin-bottom: 0;
+		}
+
+		.intro-divider {
+			width: 100%;
+		}
+	}
+
+	.network-name {
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+
+	.content-section-a {
+		padding: 50px 0;
+		background-color: #f8f8f8;
+	}
+
+	.content-section-b {
+		padding: 50px 0;
+		border-top: 1px solid #e7e7e7;
+		border-bottom: 1px solid #e7e7e7;
+	}
+
+	.section-heading {
+		margin-bottom: 30px;
+	}
+
+	.section-heading-spacer {
+		float: left;
+		width: 200px;
+		border-top: 3px solid #e7e7e7;
+	}
+
+	.banner {
+		padding: 100px 0;
+		color: #f8f8f8;
+		background: url(images/landscape-bg.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	.banner h2 {
+		margin: 0;
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+		font-size: 3em;
+	}
+
+	.banner ul {
+		margin-bottom: 0;
+	}
+
+	.banner-social-buttons {
+		margin-top: 0;
+	}
+
+	@media(max-width:1199px) {
+		ul.banner-social-buttons {
+			margin-top: 15px;
+		}
+	}
+
+	@media(max-width:767px) {
+		.banner h2 {
 			margin: 0;
-		}
-		body {
-			font-family: 'Lato', sans-serif;
-			height: 100%;
-			margin: 0;
-			color: #ffffff;
-			background-color: #000000;
-
-			/* Full height */
-			height: 100%;
-		}
-		.text-box {
-			text-align: center;
-			display: table;
+			text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+			font-size: 3em;
 		}
 
-		@media only screen and (max-width: 1400px) {
-			.text-box {
-				width: 100%;
-				height: 100%;
-				padding: 0;
-			}
-			#dcbPictureSmall {
-				width: 50%;
-			}
-		}
-		@media only screen and (min-width: 1401px) {
-			body {
-				/* Center and scale the image nicely */
-				background-position: 5% 0%;
-				background-repeat: no-repeat;
-				background-size: contain;
-				/* The image used */
-				background-image: url("dcb-cutout.png");
-			}
-			.text-box {
-				width: 45%;
-				height: 90%;
-				padding-left: 55%;
-			}
-			#dcbPictureSmall {
-				display: none;
-			}
+		ul.banner-social-buttons > li {
+			display: block;
+			margin-bottom: 20px;
+			padding: 0;
 		}
 
+		ul.banner-social-buttons > li:last-child {
+			margin-bottom: 0;
+		}
+	}
 
+	footer {
+		padding: 50px 0;
+		background-color: #f8f8f8;
+	}
 
-		h1 {
-			font-size: 4em;
-			margin-block-start: 0.15em;
-			margin-block-end: 0.15em;
-			padding-left: 0.15em;
-			padding-right: 0.15em;
-		}
-		h2 {
-			font-size: 2.5em;
-			margin-block-start: 0.15em;
-			margin-block-end: 0.15em;
-			padding-left: 0.15em;
-			padding-right: 0.15em;
-		}
-		p {
-			font-weight: 300;
-			font-size: 1.3em;
-			margin-block-start: 0.5em;
-			margin-block-end: 0.5em;
-			padding-left: 0.5em;
-			padding-right: 0.5em;
-		}
-		a {
-			color: inherit;
-
-		}
+	p.copyright {
+		margin: 15px 0 0;
+	}
 	</style>
+
+	<!-- Custom Fonts -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
 </head>
+
 <body>
-<div class="text-box">
-		<div style="display: table-cell; vertical-align: middle;">
-			<div>
-				<h1>David Bithell</h1>
-				<h2>1935 - 2023</h2>
-				<img src="dcb-cutout.png" id="dcbPictureSmall" alt="David Bithell facing the camera smiling" />
-				<br/>
-				<p>David died peacefully at home in Prestbury on Saturday 12 August, aged 87 years.</p>
-				<p>Beloved father of Michael & Charles, grandfather to Andrew, James, Thomas, Matthew, Sarah and Emma, brother-in-law, uncle and friend to many. </p>
-				<p>Family flowers only please, but donations in lieu, if desired, to the Upton Youth & Community Project (food pantry) charity number 1181691, the Royal British Legion, 219279, or any local charity. </p>
-				<p>All enquiries to JW Brocklehurst Ltd, 17 Macclesfield Prestbury, SK10 4BW, Tel: 01625 829232, <a href="https://www.cheshirefunerals.co.uk">cheshirefunerals.co.uk</a></p>
+	<!-- Header -->
+	<div class="intro-header">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="intro-message">
+						<h1>Bithell.com</h1>
+						<h3>Welcome to the Bithell Family's Official Website</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="content-section-a">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<center><h2 class="section-heading">Contact Us</h2></center>
+				</div>
+				<div class="col-lg-3">
+					<p class="lead">The Bithell Family<br/>Willesden Green<br/>London, UK<br/>NW10 1LG
+					<br/><br/><script>document.write('<a href="mailto: ' + emailyear + '@bithell.com">' + emailyear);</script>@bithell.com</a></p>
+				</div>
+				<div class="col-lg-9">
+					<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Willesden+Green,London,United+Kingdom&output=embed"></iframe>
+				</div>
 			</div>
 		</div>
-</div>
+	</div>
+	<div class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<center>
+						<ul class="list-inline banner-social-buttons">
+							<li>
+								<a href="//mail.bithell.com" class="btn btn-default btn-lg"><!--<i class="fa fa-envelope fa-fw"></i> --><span class="network-name">Webmail Login</span></a>
+							</li>
+							<li>
+								<a href="//family.bithell.com" class="btn btn-default btn-lg"><span class="network-name">Bithell Family Area</span></a>
+							</li>
+						</ul>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<center>
+						<p class="copyright">
+							&copy;<script>document.write(new Date().getFullYear());</script> James Bithell
+						</p>
+					</center>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+	
 	<!--JBITHELL.COM FLEET UPTIME TRACKING-->
 	<!--7etdFqxE8hS26A23R52P5T9ktsQ2bU535Ftj3bJc384RQ748Mx-->
 	<!--END JBITHELL.COM FLEET UPTIME TRACKING-->
