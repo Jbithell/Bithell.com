@@ -1,7 +1,9 @@
 # Site History
 
 ## Parking Page
-![](wayback-machine-captures\2003-05-30.png "")
+
+![](wayback-machine-captures\2003-05-30.png)
+
 ## v1
 
 > 2003
@@ -25,7 +27,7 @@
 
 > 2015
 
-*Migrated to Github October 2018*
+_Migrated to Github October 2018_
 
 ![Bithell.com with a image background of islands](wayback-machine-captures\2015-09-30.png "v6")
 
@@ -39,6 +41,6 @@
 
 > 27 January 2020
 
-*As v6, but with history section removed*
+_As v6, but with history section removed_
 
 ![](wayback-machine-captures\2020-01-27.png "v8")
